@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy text-textPrimary font-body;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(46, 59, 78, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(224, 224, 224, 0.1);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.5);
+  }
+
+  .neon-glow-strong {
+    box-shadow: 0 0 30px rgba(0, 180, 216, 0.8), 0 0 60px rgba(0, 180, 216, 0.4);
+  }
+
+  .alert-glow {
+    box-shadow: 0 0 20px rgba(255, 76, 76, 0.5);
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(135deg, #0A192F 0%, #2E3B4E 100%);
+  }
+
+  .pulse-animation {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .7;
+    }
+  }
+
+  .glow-on-hover {
+    transition: all 0.3s ease;
+  }
+
+  .glow-on-hover:hover {
+    box-shadow: 0 0 25px rgba(0, 180, 216, 0.6);
+    transform: translateY(-2px);
+  }
+}
