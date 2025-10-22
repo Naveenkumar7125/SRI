@@ -2907,7 +2907,7 @@
 // // Function to send frames to Python backend for Gemini analysis
 // const analyzeFramesWithGemini = async (frames: DetectedFrame[]): Promise<string> => {
 //   try {
-//     const API_KEY = 'AIzaSyBgVGVc_75ZyCpbkKzjYkDMdiBY3uF3J-w';
+//     const API_KEY = 'API';
     
 //     const PROMPT_TEXT = `
 //       Analyze these three video frames from surveillance footage and provide a comprehensive security analysis.
@@ -3815,7 +3815,7 @@ const generateMockFrames = (videoId: string, videoName: string): DetectedFrame[]
 // Function to send frames to Python backend for Gemini analysis
 const analyzeFramesWithGemini = async (frames: DetectedFrame[]): Promise<string> => {
   try {
-    const API_KEY = 'AIzaSyBgVGVc_75ZyCpbkKzjYkDMdiBY3uF3J-w';
+    const API_KEY = 'API';
     
     const PROMPT_TEXT = `
       Analyze these three video frames from surveillance footage and provide a comprehensive security analysis.
